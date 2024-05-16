@@ -1,0 +1,9 @@
+[機密情報をflutterで扱うには…](https://zenn.dev/toma_0/articles/20f64bc7972263)
+---
+envied
+.envファイルから環境変数を読み込むことができるflutterパッケージ
+enviedを用いる理由としては難読化を行う事ができるため、機密情報を悪意ある第三者が読みにくい形式に書き換えてくれます。
+enviedではobfuscate (難読化)オプションをtrueにすることで、.envファイルに保存した機密情報を難読化してdart変数の自動生成することができます。
+類似パッケージとしてfutter_dotenvパッケージがありますがenviedはfutter_dotenvと異なり難読化のサポートとdartアナリストが型推論しやすくしてくれるというメリットがあります。
+---
+
